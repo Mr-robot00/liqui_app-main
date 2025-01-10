@@ -1,0 +1,37 @@
+export 'package:liqui_app/modules/investor/dashboard/dashboard.dart';
+export 'package:liqui_app/modules/investor/home/home.dart';
+export 'package:liqui_app/modules/investor/login/login.dart';
+export 'package:liqui_app/modules/investor/select_folio/select_folio.dart';
+export 'package:liqui_app/modules/investor/splash/splash.dart';
+export 'package:liqui_app/modules/investor/test/test.dart';
+export 'package:liqui_app/modules/investor/transactions/transactions.dart';
+export 'package:liqui_app/modules/investor/profile/profile.dart';
+export 'package:liqui_app/modules/investor/verify_withdraw_request/verify_withdraw_request.dart';
+export 'package:liqui_app/modules/investor/withdraw_fund/withdraw_fund.dart';
+export 'package:liqui_app/modules/investor/bank_accounts/bank_accounts.dart';
+export 'package:liqui_app/modules/investor/basic_details/basic_details.dart';
+export 'package:liqui_app/modules/investor/my_profile/my_profile.dart';
+export 'package:liqui_app/modules/investor/my_address/my_address.dart';
+export 'package:liqui_app/modules/investor/transaction_status/transaction_status.dart';
+export 'package:liqui_app/modules/investor/deposit_funds/bindings/deposit_funds_binding.dart';
+export 'package:liqui_app/modules/investor/deposit_funds/deposit_funds_screen.dart';
+export 'package:liqui_app/modules/investor/make_payment/make_payment.dart';
+export 'package:liqui_app/modules/investor/otp/otp.dart';
+export 'package:liqui_app/modules/investor/signup/create_investor/create_investor.dart';
+export 'package:liqui_app/modules/investor/signup/sign_agreement/bindings/sign_agreement_binding.dart';
+export 'package:liqui_app/modules/investor/signup/sign_agreement/sign_agreement.dart';
+export 'package:liqui_app/modules/investor/signup/add_address/add_address.dart';
+export 'package:liqui_app/modules/investor/signup/add_address/bindings/add_address_bindings.dart';
+export 'package:liqui_app/modules/investor/signup/add_bank_account/add_bank_account.dart';
+export 'package:liqui_app/modules/investor/signup/add_bank_account/bindings/add_bank_acoount_bindings.dart';
+export 'package:liqui_app/modules/investor/signup/create_investor/bindings/create_investor_bindings.dart';
+export 'package:liqui_app/modules/investor/signup/create_investor/upload_pan.dart';
+export 'package:liqui_app/modules/investor/upload_bank_document/upload_bank_document.dart';
+export 'package:liqui_app/modules/investor/upload_pan_document/upload_pan_document.dart';
+export 'package:liqui_app/modules/investor/upload_address_document/upload_address_document.dart';
+export 'package:liqui_app/modules/investor/transaction_details/transaction_details.dart';
+export '../../../modules/investor/transaction_details/transaction_detail_two.dart';
+export '../../../modules/investor/intro/intro.dart';
+export '../../../modules/investor/portfolio_transaction/portfolio_transaction.dart';
+
+

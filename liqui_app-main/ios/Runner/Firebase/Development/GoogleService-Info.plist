@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1028288405124-ietl305caomt8uaban781km8evjhpgmm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1028288405124-ietl305caomt8uaban781km8evjhpgmm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxyqbFBm9RY9xWLi-CoPWi8QhF5zgEDFM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1028288405124</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.liquimoney</string>
+	<key>PROJECT_ID</key>
+	<string>liquimoney-stg</string>
+	<key>STORAGE_BUCKET</key>
+	<string>liquimoney-stg.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1028288405124:ios:c3991680d7e0c4d163ecd1</string>
+</dict>
+</plist>

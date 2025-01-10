@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144544910586",
+    "project_id": "liquimoney-app",
+    "storage_bucket": "liquimoney-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144544910586:android:d153c72ed863fac1fe8d43",
+        "android_client_info": {
+          "package_name": "com.liquimoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144544910586-6guomcs29h99gfb4sep5c8csqlsnd75c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGXZJVTjS8EJ58aDpJI9n0ZQGgA33E9oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144544910586-6guomcs29h99gfb4sep5c8csqlsnd75c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

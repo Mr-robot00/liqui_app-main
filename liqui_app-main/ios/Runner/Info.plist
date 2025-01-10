@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>MoEngageAppDelegateProxyEnabled</key>
+		<false />
+		<key>CADisableMinimumFrameDurationOnPhone</key>
+		<true />
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>LiquiMoney</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>LiquiMoney</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(MARKETING_VERSION)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>Bundle ID</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.liquimoney</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>Referral ID</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>liquimoney.page.link</string>
+				</array>
+			</dict>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLName</key>
+				<string>Referral ID</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>liquimoneystage.page.link</string>
+				</array>
+			</dict>
+		</array>
+		<key>CFBundleVersion</key>
+		<string>$(CURRENT_PROJECT_VERSION)</string>
+		<key>ITSAppUsesNonExemptEncryption</key>
+		<false />
+		<key>LSRequiresIPhoneOS</key>
+		<true />
+		<key>NSCameraUsageDescription</key>
+		<string>$(PRODUCT_NAME) requires access to the camera to capture photos</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>$(PRODUCT_NAME) requires access to the photo library</string>
+		<key>NSFaceIDUsageDescription</key>
+		<string>$(PRODUCT_NAME) requires access to use Face ID for the app security</string>
+		<key>UIApplicationSupportsIndirectInputEvents</key>
+		<true />
+		<key>UIBackgroundModes</key>
+		<array>
+			<string>fetch</string>
+			<string>remote-notification</string>
+		</array>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UIStatusBarHidden</key>
+		<false />
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false />
+		<!-- PRODUCTION KEY CHANGE -->
+		<key>branch_key</key>
+		<!-- <string>key_test_hBlhBN2IMKG3wXhzRMFYyclkwFl7u9g9</string> -->
+		<string>key_live_aCkitM5PMQJ6rWorSMF2tpjnuwpYw8rm</string>
+		<key>branch_universal_link_domains</key>
+		<array>
+			<string>liquimoney.app.link</string>
+			<string>liquimoney-alternate.app.link</string>
+			<string>liquimoney.test-app.link</string>
+			<string>liquimoney-alternate.test-app.link</string>
+		</array>
+	</dict>
+</plist>
