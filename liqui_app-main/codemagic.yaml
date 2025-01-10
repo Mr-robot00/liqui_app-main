@@ -1,0 +1,17 @@
+version: 1.0
+workflows:
+  flutter-workflow:
+    name: Flutter Build Workflow
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Run tests
+        script: |
+          flutter test
+    android:
+      target: app/build.gradle
+      gradle: true
+    ios:
+      target: Runner.xcworkspace
+      xcode: true
