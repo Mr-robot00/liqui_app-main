@@ -1,0 +1,59 @@
+name: Version Check
+
+on:
+  pull_request:
+    branches:
+      - main   # Only trigger for PRs targeting the 'main' branch
+
+jobs:
+  check-version:
+    runs-on: windows-latest  # Make sure to specify 'windows-latest' if you're using Windows
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
+      - name: Get the last version from git tags
+        id: get_last_version_tag
+        run: |
+          # Determine the target branch of the pull request
+          branch_name="${{ github.maain }}"
+
+          echo "Branch name: $branch_name"
+
+          # Get all tags sorted by creation date
+          all_tags=$(git tag --sort=-creatordate)
+
+          # Find the last tag that matches the version pattern (e.g., v1.2.3)
+          last_version_tag=$(echo "$all_tags" | grep -oP '(?<=v)\d+\.\d+\.\d+.*' | head -n 1)
+
+          echo "Last version tag: $last_version_tag"
+
+          # Export the last version for use in later steps
+          echo "last_version_tag=$last_version_tag" >> $GITHUB_ENV
+
+      - name: Read current version from pubspec.yaml
+        id: read_pubspec
+        run: |
+          current_version=$(grep '^version:' pubspec.yaml | sed 's/version: //')
+          # Remove any extra spaces or line breaks from the current version
+          current_version=$(echo "$current_version" | xargs)
+          echo "current_version=$current_version" >> $GITHUB_ENV
+          
+          echo "Current version: $current_version"
+
+      - name: Compare versions
+        id: compare_versions
+        run: |
+          last_version_tag="${{ env.last_version_tag }}"
+          current_version="${{ env.current_version }}"
+          
+          # Compare versions (handle cases where versions may not match exactly due to formatting)
+          if [[ "$last_version_tag" != "$current_version" ]]; then
+            echo "Versions are different: $last_version_tag != $current_version"
+            exit 1  # Exit with an error if versions are different
+          fi
+
+          echo "Versions are the same: $last_version_tag == $current_version"
